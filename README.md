@@ -19,8 +19,25 @@ HSE_raw = Detection_HSEs(__) returns cell array to contain data matrices. Row of
 * 'latency_threshold' - criterion for ripple-associated or non-associated HSEs
 * 'binWin' - number of frames to additionally extract around HSEs
 
+
 #### TriggerDetect.m:
-Crossings = TriggerDetect(__) returns cell array to contain 
+Crossings = TriggerDetect(__) returns cell array to contain two vectors and matrix of them. A vector contains time frames of event initiation and another contains time frame of event terminations.
+
+* 'Signal' - vector of data containing prominent events like spikes 
+* 'UpThresh' - threshold for upward direction
+* 'DownThresh' - threshold for downward direction
+
+
+#### pairwise_reactivation.m
+ccgZlagN = pirwise_reactivation(__) returns cross-correlation at zero-lag as the vector. The length corresponds position bins. 
+
+* 'HSE_raw' - cell array detected by 'Detection_HSEs.m'
+* 'HSE_coeff' - correlation coefficients between HSE (average df/f) and each ROI
+* 'th_coeff' - threshold for correlation coefficient
+* 'myPSTH' - place fields of each ROI
+* 'beltLength' - length of a treadmill belt
+* 'binsize' - binsize for smoothing
+* 'binshift' - binsize to shift smoothing window
 
 #### Authors
 *st3166 AT columbia DOT edu
@@ -28,4 +45,3 @@ Crossings = TriggerDetect(__) returns cell array to contain
 #### Acess to the dateset:
 
 The dataset will be made available soon
-
