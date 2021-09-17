@@ -9,7 +9,7 @@ This repository contains code and links to dataset from Terada et al., Nature (2
 ### Description
 
 #### Detection_HSEs.m:
-HSE_raw = Detection_HSEs(__) returns cell array to store data matrices. Row of matrix correspond to individual region of intrests (ROIs) and columns correspond to time frames from event onset. Each column contains dF/F of individual ROIs at each timebin. The length of cell array corresponds the number of detected events in dataset.
+HSE_raw = Detection_HSEs(__) returns cell array to contain data matrices. Row of matrix correspond to individual region of intrests (ROIs) and columns correspond to time frames from event onset. Each column contains dF/F of individual ROIs at each timebin. The length of cell array corresponds the number of detected events in dataset.
 
 * 'PL_raw' - matrix (ROI-by-timebin) of dF/F.
 * 'mvFrame' - length of frames for moving avarage to normalize dF/Fs.
@@ -19,6 +19,8 @@ HSE_raw = Detection_HSEs(__) returns cell array to store data matrices. Row of m
 * 'latency_threshold' - criterion for ripple-associated or non-associated HSEs
 * 'binWin' - number of frames to additionally extract around HSEs
 
+#### TriggerDetect.m:
+Crossings = TriggerDetect(__) returns cell array to contain 
 
 #### Authors
 *st3166 AT columbia DOT edu
