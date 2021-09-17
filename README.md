@@ -3,5 +3,5 @@ This repository contains code and links to dataset from Terada et al., Nature (2
 
 # Prerequisities
 * [MATLAB](https://ch.mathworks.com/products/matlab.html) (R2019a)
-* Signal Processing Toolbox
-* Statistics and Machine Learning Toolbox
+* [Signal Processing Toolbox](https://ch.mathworks.com/products/signal.html)
+* [Statistics and Machine Learning Toolbox](https://ch.mathworks.com/products/statistics.html)
