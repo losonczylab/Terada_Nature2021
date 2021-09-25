@@ -26,7 +26,7 @@ clear binsize binshift framebin1 framebin2
 
 for tt = 1:length(HSE_raw);
 myraw = HSE_raw{tt}(:,:);
-react_roi = find(HSE_coeff(:,tt) > th_coeff);
+react_roi = find(HSE_coeff(:,tt) > th_coeff); % th_coeff = 0.4
 if length(react_roi) == 0;
 else
 myraw_h = myraw(react_roi,:);
