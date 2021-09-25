@@ -10,6 +10,7 @@ ccg_zerolag = [];
 [maxPF.val,maxPF.bin] = max(myPSTH,[],2);
 PF_peak = maxPF.bin;
 % place field distance for treadmill
+% beltlength = 2050;
 pf_distance(1,:) = [1:1:beltLength*2];
 pf_distance(2,:) = [[1:1:beltLength] [1:1:beltLength]];
 pf_dist_win = (beltLength - 1) / 2;
