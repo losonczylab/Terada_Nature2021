@@ -21,7 +21,7 @@ HSE_raw = Detection_HSEs(__) returns cell array to contain data matrices. Row of
 
 
 #### TriggerDetect.m:
-Crossings = TriggerDetect(__) returns cell array to contain two vectors and a matrix of them. A vector contains time frames of event initiation and another contains time frame of event terminations.
+Crossings = TriggerDetect(__) returns cell array to contain two vectors and a matrix of them. A vector contains time frames of event initiation and another contains time frame of event terminations. The matrix contains both.
 
 * 'Signal' - vector of data containing prominent events like spikes 
 * 'UpThresh' - threshold for upward direction
